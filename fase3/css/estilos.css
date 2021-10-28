@@ -1,0 +1,101 @@
+/* Titulo de página */
+.titulo{
+    background-color: #D6D2C4;
+    text-align: center;
+    font-size: 36px;
+    padding: 10px;
+    border: 1px solid black;
+}
+/* Color del menu de la página */
+.menu{
+    background-color: #EAE2B6;
+    border: 1px solid black;
+    padding: 20px;
+}
+/* sección izquierda de la página web */
+.seccion{
+    background-color: #F5C6A5;
+    grid-column: 1/4;
+}
+/* titulos del contenido de la página */
+.tituloarticulo{
+    font-size: 36px;
+    text-align: center;
+}
+/* tamaño de la letra, justificación y bordes del contenido */
+.parrafoarticulo{
+    font-size: 24px;
+    text-align: justify;
+    padding: 10px 20px;
+}
+/* sección derecha de la página web */
+.lateral{
+    background-color: #DEBA9D;
+    text-align: center;
+    grid-column: 4/5;
+}
+/* pie de página de la web */
+.pie{
+    background-color: #D6D2C4;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
+}
+/* distribucion de la columnas para el contenido de la página */
+.contenido{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border: 1px solid black;
+}
+/* menu desplegable de la página  */
+.menu{
+    overflow: hidden;
+}
+.menu .desplegable{
+    list-style: none;
+}
+.menu .desplegable>li{
+    text-align: center;
+    padding: 1em;
+    width: 17.5%;
+    float: left;
+    border: 1px solid black;
+}
+.menu .desplegable>li>a{
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+.menu .desplegable>li:hover,.menu .desplegable>li>.menu_desplegable>li:hover{
+    background-color: #D6D2C4;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.menu .desplegable>li>.menu_desplegable{
+    position: absolute;
+    font-size: 30px;
+    text-align: center;
+    background:#EAE2B6;
+    width: 25%;
+    list-style: none;
+    margin-top: 0.2em;
+    display: none;
+    margin-left: -0.6em;
+    border: 1px solid black;
+    padding: 0px;
+}
+.menu .desplegable>li:hover>.menu_desplegable{
+    display: block;
+}
+.menu .desplegable>li>.menu_desplegable>li{
+    padding: 1em;
+}
+.menu .desplegable>li>.menu_desplegable>li>a{
+    text-decoration: none;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}
