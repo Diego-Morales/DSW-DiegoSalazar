@@ -104,3 +104,7 @@ body{
     font-weight: bold;
     color: black;
 }
+.navbar .nav-item .dropdown-menu .dropdown-item:hover {
+    color: black !important;
+    background-color: #D6D2C4;
+}
